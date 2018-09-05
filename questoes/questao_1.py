@@ -11,7 +11,12 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 1")
+    #sal = salário aum = aumento sf = salário final#
+    sal = float(input('Qual é o salário do funcionário? '))
+    aum = float(input('De quanto será o aumento? (Digite o valor em porcentagem) '))
+    sf = sal+(sal*aum/100)
+    print('O funcionário que ganhava R${:.2f}, com {:.1f}% de aumento, passará a ganhar R${:.2f}'.format(sal, aum, sf))
+    
     
 
 

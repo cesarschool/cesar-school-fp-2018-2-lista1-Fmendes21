@@ -11,7 +11,11 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 4")
+    #p = preço
+    dias = int(input('O carro foi alugado por quantos dias? '))
+    km = float(input('Quantos Km rodados? '))
+    p = (60*dias)+(0.15*km)
+    print('O preço total a pagar é de R${:.2f}'.format(p))
 
 
     

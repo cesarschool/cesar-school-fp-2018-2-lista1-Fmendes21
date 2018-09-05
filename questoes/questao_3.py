@@ -11,7 +11,14 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 3")
+    from math import pi
+    # r = raio a = área d = diâmetro cc = comprimento da circunferência
+    r = int(input('Digite o tamanho do raio em centímetros: '))
+    a = pi * pow(r, 2)
+    d = r * 2
+    cc = 2 * pi * r
+    print('Uma circunferência com raio igual a {} possui uma área de {:.2f} cm², um diâmetro de {:.2f} cm e um comprimento de {:.2f} cm'.format(r, a, d, cc))
+
 
 
     
